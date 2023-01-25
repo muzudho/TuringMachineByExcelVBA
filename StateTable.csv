@@ -1,0 +1,7 @@
+﻿State,Read,Write,Move,Transition
+A,White,Orange,>,B
+A,Orange,Orange,<,C
+B,White,Orange,<,A
+B,Orange,Orange,>,B
+C,White,Orange,<,B
+C,Orange,Orange,>,HALT

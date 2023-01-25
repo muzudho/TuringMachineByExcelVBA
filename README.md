@@ -1,0 +1,2 @@
+# TuringMachineByExcelVBA
+チューリングマシンを作ろうぜ（＾～＾）？

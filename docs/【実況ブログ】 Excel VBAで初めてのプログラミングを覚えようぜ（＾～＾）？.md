@@ -1161,4 +1161,84 @@ A列の左に　列挿入して、　列番地も左に　１つずらして　�
 
 📅2023-01-26 thu 22:18  
 
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　じゃあ　あと　１００クロックぐらい　動かしましょう」  
+
+![202301_excel_26-2226--For-1.png](https://crieit.now.sh/upload_images/fb04bbd9f19fbc722de48dff01546cd663d27fa2132bb.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　`For` 文を使えば　１００行書かずに済むから楽だよな。  
+漸化式の形に作っておけば　繰り返しの回数を指定するだけでいいから　手間要らずだぜ」  
+
+![202301_excel_26-2229--Error-1.png](https://crieit.now.sh/upload_images/a1471049d3f876f18e31d667018db7ba63d2805d6d23d.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　エラーが出た」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　🔍 `VBA 1004 Error` で検索しろだぜ」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　さっきと同じ 1004 番よ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　今度は何が無かったんだろな？」  
+
+![202301_excel_26-2237--empty-previous-cell-1.png](https://crieit.now.sh/upload_images/e12e7323f7bb4b8c004c359ac49f51f463d282597704d.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　`previousCell` 変数の中身が空文字列だぜ。」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　`A1` とか、何か番地が入っているはずじゃない」  
+
+![202301_excel_26-2234--reset-button-1.png](https://crieit.now.sh/upload_images/8e8dc3028f75bf93b711ed6b1dc4afeb63d2817a7f5e3.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　`リセット` ボタンを押すと　デバッグは止まるぜ」  
+
+![202301_excel_26-2240--Halt-1.png](https://crieit.now.sh/upload_images/1d653278fa64d4c114346024b8a8d96563d282f95697e.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　多分、 `HALT` （ハルト）が出たら　終了しないといけないんだぜ」  
+
+![202301_excel_26-2246--success-1.png](https://crieit.now.sh/upload_images/841a4e08b5050abfa210923ba8fae31463d28497a867f.png)  
+
+```vba
+            If transitionText = "HALT" Then
+                ' 関数から抜ける
+                OnClock = "SUCCESS"
+                Exit Function
+            End If
+```
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　じゃあ　`HALT` （ハルト）が出たときは　セル番地ではなく　`SUCCESS`　を返すという取り決めにしておこうぜ」  
+
+![202301_excel_26-2252--exitFor-1.png](https://crieit.now.sh/upload_images/c564d0d7d0a67a74807f51a08fe8c7e063d285d9d674a.png)  
+
+```vba
+        ' 正常終了時はループから抜ける
+        If resultCell = "SUCCESS" Then
+            Exit For
+        End If
+```
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　関数の呼び出し元でも　前判定で　`resultCell` 変数の内容が `SUCCESS` だったら、ループから抜けるようにすれば　コードも短いぜ」  
+
+![202301_excel_26-2255--play.png](https://crieit.now.sh/upload_images/fb5cfeec04b8547813467f8277e03b0363d2866e64c44.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　なんか　動いた跡があるな」  
+
+![202301_excel_26-2257--QUOTE-Wikipedia.png](https://crieit.now.sh/upload_images/fcddc59f9b69d6982a3cfa1957cb583463d286dede709.png)  
+
+📖 [Turing machine](https://en.wikipedia.org/wiki/Turing_machine)  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　👆　Wikipedia のサンプルと違くない？」  
+
+
+
 # // 書きかけ

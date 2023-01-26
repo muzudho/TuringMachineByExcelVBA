@@ -1072,4 +1072,93 @@ End Function
 ![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
 「　こんなん　何がどう変わったのか　読者　分からんだろ」  
 
+![202301_excel_26-2146--main-1.png](https://crieit.now.sh/upload_images/96464638d29440e381b1a1a8848dbbec63d27668d882a.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　このように　前の計算結果を使って　また同様に計算するように作るのは　よくあるテクニックだぜ。  
+**漸化式**（ぜんかしき） とか　これだな」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　さっさと　３クロック目を書きなさいよ」  
+
+![202301_excel_26-2150--3rdClock-1.png](https://crieit.now.sh/upload_images/fb4fbbb839b9dbe36e947cc566b9f0bd63d2773c25cbc.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　３クロック目は、２クロック目と同じコードで　いいはずなんだぜ。  
+動かしてみよう」  
+
+![202301_excel_26-2152--error-1.png](https://crieit.now.sh/upload_images/66f641f330add453cbf13187a107f99a63d277b62b870.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　エラーが出たぜ」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　直せ！」  
+
+![202301_excel_26-2153--debug-1.png](https://crieit.now.sh/upload_images/0f024dcbc6526f5a4dcbcdef822d799d63d27800a2056.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　`[デバッグ（D）]` ボタンを押してみようぜ？」  
+
+![202301_excel_26-2155--highlight.png](https://crieit.now.sh/upload_images/e034203acef8d1e6ea39d674be15a19663d278556be61.png)  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　エラーがあった行をハイライト（Highlight）してくれてるのかもしれないけど　説明がないから分かんないわねぇ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　また　ショートカットを打鍵すれば　ウィンドウが出てくるのかだぜ？」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　ググりゃいいんじゃないの？」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　🔍 `VBA スタックトレース` で検索」  
+
+📖 [VBAナメてた](https://speakerdeck.com/narazaka/vbanameteta?slide=116)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　行番号とエラーコードしか　分かんないらしいぜ」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　1994年の環境ねえ」  
+
+📅2023-01-26 thu 22:01  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　🔍 `VBA 1004 Error` で検索」  
+
+📖 [VBA Error 1004 in Excel](https://www.wallstreetmojo.com/vba-1004-error/#:~:text=This%20error%20occurs%20when%20you,name%20with%20the%20excel%20extension)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　無いシート名や、無いアドレスを指定したら　出てくるエラーかも知らん」  
+
+![202301_excel_26-2207--error.png](https://crieit.now.sh/upload_images/3265aec10a1e7becdb64caf901d1eb1763d27b13390ff.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　A列より　左に進もうとして　０列目は無いので　エラーになったんだな」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　A列の左に　列を挿入しろだぜ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　🔍 `VBA 列の挿入` で検索」  
+
+📖 [VBA 列を挿入する](https://www.tipsfound.com/vba/09005)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　よし　分かったぜ」  
+
+![202301_excel_26-2215--bugfix-1.png](https://crieit.now.sh/upload_images/9c1455ad9824e532e31e7a03b5cf779363d27d2c21916.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　０列にアクセスしようとしたら、  
+A列の左に　列挿入して、　列番地も左に　１つずらして　１列にアクセスするように変更しよう」  
+
+![202301_excel_26-2218--3rdClockDone.png](https://crieit.now.sh/upload_images/6e7a3a2dcf4463fa7169bed325e8f84163d27da7bd035.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　３クロック目も　動いたようだな」  
+
+📅2023-01-26 thu 22:18  
+
 # // 書きかけ

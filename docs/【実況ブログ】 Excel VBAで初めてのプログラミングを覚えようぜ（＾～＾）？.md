@@ -1539,4 +1539,6 @@ End Function
 ![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
 「　もっと面白い例題でやってほしい」  
 
+参考： 📖 [Git Hub / TuringMachineByExcelVBA](https://github.com/muzudho/TuringMachineByExcelVBA)  
+
 ＜おわり＞

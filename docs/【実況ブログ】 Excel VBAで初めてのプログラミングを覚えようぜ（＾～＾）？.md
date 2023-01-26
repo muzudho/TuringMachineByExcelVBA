@@ -146,7 +146,7 @@ A
 📖 [セルに値を入れる：Excel VBA プログラミング入門](http://www.eurus.dti.ne.jp/~yoneyama/Excel/vba/prog/prog_atai.html)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ![202301_excel_25-2046--HelloWorld-1.png](https://crieit.now.sh/upload_images/8bedf851dc72c6806bd384e10b70508e63d116df021a7.png)  
 
@@ -176,7 +176,7 @@ Worksheets("GUI").Range("A1").Value = "Hello, world!!"
 📖 [セルに色を設定する](https://www.tipsfound.com/vba/07006)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ![202301_excel_25-2056--BackgroundColor-1.png](https://crieit.now.sh/upload_images/ab3f6398046ba32df211de0534339eb163d1190f3e6d6.png)  
 
@@ -213,7 +213,7 @@ Worksheets("GUI").Range("A1").Interior.ColorIndex = 45 ' オレンジ
 📖 [VBA セルの色を取得する (Interior.Color, ColorIndex)](https://www.tipsfound.com/vba/07005)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ![202301_excel_25-2117--CopyColor-1.png](https://crieit.now.sh/upload_images/54dd3efed1a31e73d04c267e53e17dac63d11e1182115.png)  
 
@@ -260,7 +260,7 @@ Worksheets("GUI").Range("A1").Interior.ColorIndex = 45 ' オレンジ
 📖 [イミディエイトウィンドウの使い方](https://www.kenschool.jp/blog/?p=3430)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ![202301_excel_25-2125--Immediate-1.png](https://crieit.now.sh/upload_images/e6b3acf6e5aca1fc55867d968f4f342d63d120141a3d7.png)  
 
@@ -390,7 +390,7 @@ End Sub
 📖 [[Excel で VBA] For 文による繰り返し](https://brain.cc.kogakuin.ac.jp/~kanamaru/lecture/vba2013/04-for01.html)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
 「　`For文` が何かの説明は　しないのね」  
@@ -413,7 +413,7 @@ VBA の if 文ってどうやって書くんだったかな？」
 📖 [ExcelのVBA（マクロ）でIf～Then～Elseを使って条件分岐する方法](https://office-hack.com/excel/if-vba/)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ![202301_excel_25-2249--if-then-else-1.png](https://crieit.now.sh/upload_images/55c377d1e72e453ee5954f4471aa3a9a63d133aea4cb7.png)  
 
@@ -433,7 +433,7 @@ Forループを途中で抜けるの　VBAで　どうやって書くんだっ�
 📖　[Excel VBAでFor文を途中で抜ける：Exit](https://uxmilk.jp/48591)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ```vba
 Sub ボタン1_Click()
@@ -666,7 +666,7 @@ End Sub
 📖 [Excel VBA 処理の一部をサブルーチン化するCallステートメント](https://kosapi.com/post-5008/)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ![202301_excel_26-1901--Subroutine-1.png](https://crieit.now.sh/upload_images/bd596f09e3b962c6b9f6b5e2603dca2263d24fb97805b.png)  
 
@@ -821,7 +821,7 @@ End Sub
 📖 [【ExcelVBA】列名のアルファベットと列番号の数字を相互変換する](https://qiita.com/11295/items/c26017eb21cb319fd29d)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ![202301_excel_26-2110--General.png](https://crieit.now.sh/upload_images/692b189f8ba2c55c3ffb94fda73ba9b963d26dd08ec89.png)  
 
@@ -959,7 +959,7 @@ End Sub
 📖 [VBA　Functionプロシージャについて　～関数の解説と使用例～](https://www.bold.ne.jp/engineer-club/vba-function)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ![202301_excel_26-2141--function.png](https://crieit.now.sh/upload_images/b537b697560f1fb0aeeaadc57a17f15b63d2751076122.png)  
 
@@ -1146,7 +1146,7 @@ End Function
 📖 [VBA 列を挿入する](https://www.tipsfound.com/vba/09005)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かったぜ」  
+「　👆　よし　分かったぜ」  
 
 ![202301_excel_26-2215--bugfix-1.png](https://crieit.now.sh/upload_images/9c1455ad9824e532e31e7a03b5cf779363d27d2c21916.png)  
 
@@ -1239,6 +1239,206 @@ A列の左に　列挿入して、　列番地も左に　１つずらして　�
 ![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
 「　👆　Wikipedia のサンプルと違くない？」  
 
+![202301_excel_26-2308--copy-paint-1.png](https://crieit.now.sh/upload_images/28e374907e108dedeadc637e6038f08c63d2896c1f1a6.png)  
 
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　A列と B列しか　背景色をコピーしてないからな」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　テープの長さと同じ幅だけ　コピーしてくれだぜ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　じゃあ　テープの長さも　数えておかないといけないな」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　VBA で、自由変数の使い方、または　引数の参照渡しのやり方は　どう書くんだろうな？」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　ググりゃいいんじゃないの？」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　🔍 `VBA 引数の参照渡し` で検索」  
+
+📖 [値渡し（ByVal）、参照渡し（ByRef）について](https://excel-ubara.com/excelvba4/EXCEL218.html)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　よし　分かったぜ」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　ぜったい　そんな記事を　ちらっと読んでも　何も分からないけどな」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　プログラムの組み方は分かってるが　VBA での書き方が分からないだけなんで、ちら見で　充分だぜ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　あれっ？　`ByRef tapeWidth As Long`　と書いても　参照渡しになって無（ね）。  
+調べても分からないことはある。  
+自由変数にするか」
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　🔍 `VBA グローバル変数` で検索」  
+
+📖 [変数の適用範囲](http://officetanaka.net/excel/vba/variable/05.htm)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　よし　分かったぜ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　でも　書いているうちに　`tapeWith`　というスペルミスを見つけて　`tapeWidth` 直したら動くようになった」  
+
+![202301_excel_26-2354--codeA-1.png](https://crieit.now.sh/upload_images/af1d389778a107a54445f1e0442c878963d294a4512f6.png)  
+![202301_excel_26-2357--codeB-1.png](https://crieit.now.sh/upload_images/b55aa54001335ce25c06ca45f7c876a263d294fddbcb3.png)  
+
+```vba
+Sub ボタン1_Click()
+
+    Dim resultCell As String
+    Dim tapeWidth As Long
+    tapeWidth = 1   ' "A1" セル１つ分
+    
+    ' 1回目の処理
+    resultCell = OnClock("A1", tapeWidth)
+
+    ' 同様の i 回目の処理
+    Dim i As Long
+    For i = 2 To 100
+    
+        ' 正常終了時はループから抜ける
+        If resultCell = "SUCCESS" Then
+            Exit For
+        End If
+    
+        resultCell = OnClock(resultCell, tapeWidth)
+    Next i
+    
+End Sub
+
+Private Function OnClock(previousCell As String, ByRef tapeWidth) As String
+    ' 毎クロック（ｎ回目のクロック）
+    Dim previousFileAlphabet As String
+    Dim previousRank As Long
+    Dim previousText As String
+    Dim previousBackgroundColor As Long
+    Dim currentRank As Long
+    Dim currentCell As String
+    Dim stateText As String
+    Dim readBackgroundColor As Long
+    Dim writeBackgroundColor As Long
+    Dim moveText As String
+    Dim transitionText As String
+    Dim i As Long
+    
+    previousFileAlphabet = Split(Cells(1, Range(previousCell).Column).Address, "$")(1)
+    previousRank = Range(previousCell).Row
+    currentRank = previousRank + 1
+    currentCell = previousFileAlphabet & currentRank
+    Debug.Print ("--------")
+    Debug.Print ("previousCell        :" & previousCell)
+    Debug.Print ("previousFileAlphabet:" & previousFileAlphabet)
+    Debug.Print ("previousRank        :" & previousRank)
+    Debug.Print ("currentRank         :" & currentRank)
+    Debug.Print ("currentCell         :" & currentCell)
+    Debug.Print ("tapeWidth           :" & tapeWidth)
+        
+    ' 開始行の背景色は、次行に引き継ぐ
+    If 2 <= previousRank Then
+        For i = 1 To (tapeWidth + 1)
+            Dim tempFileAlphabet As String
+            Dim tempBackgroundColor As Long
+            
+            tempFileAlphabet = Split(Cells(1, i).Address, "$")(1)
+            tempBackgroundColor = Worksheets("Tape").Range(tempFileAlphabet & previousRank).Interior.color
+            Debug.Print ("i                  :" & i)
+            Debug.Print ("tempFileAlphabet   :" & tempFileAlphabet)
+            Debug.Print ("tempBackgroundColor:" & tempBackgroundColor)
+            Worksheets("Tape").Range(tempFileAlphabet & currentRank).Interior.color = tempBackgroundColor
+        Next i
+    End If
+
+    previousText = Worksheets("Tape").Range(previousCell).Value                             ' 開始セルの値
+    previousBackgroundColor = Worksheets("Tape").Range(previousCell).Interior.color         ' 開始セルの背景色
+    Debug.Print ("previousText           :" & previousText)
+    Debug.Print ("previousBackgroundColor:" & previousBackgroundColor)
+
+    For i = 2 To 7
+        stateText = Worksheets("StateTable").Range("A" & i).Value                           ' 状態テーブルのState値
+        readBackgroundColor = Worksheets("StateTable").Range("B" & i).Interior.color        ' 状態テーブルのRead列の背景色
+        Debug.Print ("stateText           :" & stateText)
+        Debug.Print ("readBackgroundColor :" & readBackgroundColor)
+        
+        ' 一致するか？
+        If previousText = stateText And previousBackgroundColor = readBackgroundColor Then
+            writeBackgroundColor = Worksheets("StateTable").Range("C" & i).Interior.color   ' 状態テーブルのWrite列の背景色
+            moveText = Worksheets("StateTable").Range("D" & i).Value                        ' 状態テーブルのMove列の値
+            transitionText = Worksheets("StateTable").Range("E" & i).Value                  ' 状態テーブルのTransition列の値
+            Debug.Print ("writeBackgroundColor:" & writeBackgroundColor)
+            Debug.Print ("moveText            :" & moveText)
+            Debug.Print ("transitionText      :" & transitionText)
+
+            ' `Tape` シートの A1 セルの下のセルの背景色を　Write列のいう色に塗る
+            Worksheets("Tape").Range(currentCell).Interior.color = writeBackgroundColor
+            
+            Dim horizontal As Long      ' 水平方向
+            If moveText = ">" Then      ' Move 列が `>` だったら その右のセルへ
+                horizontal = 1
+            ElseIf moveText = "<" Then  ' Move 列が `<` だったら その左のセルへ
+                horizontal = -1
+            End If
+            Debug.Print ("horizontal:" & horizontal)
+            
+            ' Transition 列のいうテキストを入れる
+            Dim previousFileNumber As Integer
+            Dim nextFileAlphabet As String
+            Dim nextFileNumber As Integer
+            Dim nextCell As String
+            previousFileNumber = Columns(previousFileAlphabet).Column
+            nextFileNumber = previousFileNumber + horizontal
+            Debug.Print ("previousFileNumber :" & previousFileNumber)
+            Debug.Print ("nextFileNumber     :" & nextFileNumber)
+            
+            If nextFileNumber = 0 Then
+                Worksheets("Tape").Columns("A").Insert  ' A 列の左に列挿入
+                nextFileNumber = nextFileNumber + 1     ' 列番号を 1 つ左へずらす
+                tapeWidth = tapeWidth + 1               ' Update
+            ElseIf tapeWidth < nextFileNumber Then
+                tapeWidth = nextFileNumber              ' Update
+            End If
+            
+            nextFileAlphabet = Split(Cells(1, nextFileNumber).Address, "$")(1)
+            nextCell = nextFileAlphabet & currentRank
+            Debug.Print ("nextFileAlphabet   :" & nextFileAlphabet)
+            Debug.Print ("nextCell           :" & nextCell)
+            Worksheets("Tape").Range(nextCell).Value = transitionText
+
+            If transitionText = "HALT" Then
+                ' 関数から抜ける
+                OnClock = "SUCCESS"
+                Exit Function
+            End If
+
+            ' 関数から抜ける
+            OnClock = nextCell
+            Exit Function
+            
+        End If
+    Next i
+End Function
+```
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　よし　`tapeWidth` も付けたぜ」  
+
+![202301_excel_27-0000--play.png](https://crieit.now.sh/upload_images/91ed806503af3b04a8d5394f6273ba2863d29593358bd.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　チューリング・マシンが　でけたぜ」  
+
+📅2023-01-27 thu 00:01
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　`HALT` は出力しないのが　チューリング・マシンみたいよ？」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　じゃあ　`StateTable`　の　`Transition`　列で　`HALT`　を見つけたところで　止めた方がいいのか」  
 
 # // 書きかけ

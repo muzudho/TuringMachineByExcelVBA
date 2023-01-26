@@ -1441,4 +1441,49 @@ End Function
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
 「　じゃあ　`StateTable`　の　`Transition`　列で　`HALT`　を見つけたところで　止めた方がいいのか」  
 
+![202301_excel_27-0005--moveCode-1.png](https://crieit.now.sh/upload_images/abf090d159ec50ccbce29faabf09177763d297118951f.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　判定部を　上に持っていけば　いいんじゃないかだぜ？」  
+
+![202301_excel_27-0008--copy-1.png](https://crieit.now.sh/upload_images/399be2584be9b9b2bba3b35100bb8eea63d29777bbde4.png)  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　👆　１行　余分に背景色をコピーしてるわよ？」  
+
+![202301_excel_27-0010--copyB-1.png](https://crieit.now.sh/upload_images/a8099b2405cf0ef7b4787895939535d763d29816eaaea.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　背景色のコピーを、判定部の後ろに持っていけば　いいんじゃないかだぜ？」  
+
+![202301_excel_27-0012--error.png](https://crieit.now.sh/upload_images/12497135a2ffdac5dce45202516e999e63d2987639a62.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　おっと」  
+
+![202301_excel_27-0013--define-1.png](https://crieit.now.sh/upload_images/4eaad7541e0323d5f67ce285389749c163d298cfdb63f.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　変数 `i` は、外側のループの　ループ・カウンターとして使ってたか」  
+
+![202301_excel_27-0016--J-1.png](https://crieit.now.sh/upload_images/6c2e941fdc56048c2fc58049fa4bec4963d2997f8510f.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　じゃあ　変数 `j` を作ればいいや」  
+
+![202301_excel_27-0018--ok.png](https://crieit.now.sh/upload_images/82af7bdc12bd9c36c10effeab11fb3f463d299c572cee.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　これで　チューリング・マシン　は完成だぜ。  
+一般化してないのと、不具合が残っているのが　残っているかも知れないが……」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　これは何に使うんだぜ？」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　小さなメモリを使って、もう少し色々動き回る　**自動人形**（オートマタ；automata）を作ったり、  
+もっと大きなものを作るのに使われるぜ  」
+
+
+
 # // 書きかけ

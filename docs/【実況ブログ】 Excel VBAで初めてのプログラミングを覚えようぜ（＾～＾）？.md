@@ -792,4 +792,284 @@ End Sub
 
 📅2023-01-26 thu 19:16  
 
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　３クロック目も　コピー貼り付けして作んの？」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　嫌になるだろ」  
+
+![202301_excel_26-1919--OnClock-1.png](https://crieit.now.sh/upload_images/3ef93b3d925a27efdeb7ebe3aa75cd5d63d253cfe6a02.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　何回目のクロックでも使えるジェネラル（General）なサブルーチンを作ろうぜ？」  
+
+![202301_excel_26-1911--MovedCode-diff.png](https://crieit.now.sh/upload_images/5b0a749e37816dd597d3d8c6ca75b62763d255a98666e.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　違うところは５か所ぐらいなんだから、ここを違わないようにすればいいわけだぜ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　Ａ列の右隣は B列 だが、  
+`A` の右は何か尋ねたら `B` が返ってくるような方法って VBA にあるのかだぜ？」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　ググりゃいいんじゃないの？」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　🔍 `VBA 列アルファベット変換` で検索」  
+
+📖 [【ExcelVBA】列名のアルファベットと列番号の数字を相互変換する](https://qiita.com/11295/items/c26017eb21cb319fd29d)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　よし　分かったぜ」  
+
+![202301_excel_26-2110--General.png](https://crieit.now.sh/upload_images/692b189f8ba2c55c3ffb94fda73ba9b963d26dd08ec89.png)  
+
+```vba
+Sub ボタン1_Click()
+    
+    ' 1回目の処理
+    Call OnClock("A", 1)
+    
+    ' 同様の2回目の処理
+    Call OnClock("B", 2)
+    
+End Sub
+
+Private Sub OnClock(previousFileAlphabet As String, previousRank As Long)
+    ' TODO 毎クロック（ｎ回目のクロック）
+    Dim previousText As String
+    Dim previousBackgroundColor As Long
+    Dim previousCell As String
+    Dim currentRank As Long
+    Dim currentCell As String
+    Dim stateText As String
+    Dim readBackgroundColor As Long
+    Dim writeBackgroundColor As Long
+    Dim moveText As String
+    Dim transitionText As String
+    Dim i As Long
+    
+    previousCell = previousFileAlphabet & previousRank
+    currentRank = previousRank + 1
+    currentCell = previousFileAlphabet & currentRank
+    Debug.Print ("--------")
+    Debug.Print ("previousFileAlphabet:" & previousFileAlphabet)
+    Debug.Print ("previousRank        :" & previousRank)
+    Debug.Print ("previousCell        :" & previousCell)
+    Debug.Print ("currentRank         :" & currentRank)
+    Debug.Print ("currentCell         :" & currentCell)
+        
+    ' 開始行の背景色は、次行に引き継ぐ
+    If 2 <= previousRank Then
+        Dim aBackgroundColor As Long
+        Dim bBackgroundColor As Long
+        aBackgroundColor = Worksheets("Tape").Range("A" & previousRank).Interior.color
+        bBackgroundColor = Worksheets("Tape").Range("B" & previousRank).Interior.color
+        Worksheets("Tape").Range("A" & currentRank).Interior.color = aBackgroundColor
+        Worksheets("Tape").Range("B" & currentRank).Interior.color = bBackgroundColor
+        Debug.Print ("aBackgroundColor:" & aBackgroundColor)
+        Debug.Print ("bBackgroundColor:" & bBackgroundColor)
+    End If
+
+    previousText = Worksheets("Tape").Range(previousCell).Value                             ' 開始セルの値
+    previousBackgroundColor = Worksheets("Tape").Range(previousCell).Interior.color         ' 開始セルの背景色
+    Debug.Print ("previousText           :" & previousText)
+    Debug.Print ("previousBackgroundColor:" & previousBackgroundColor)
+
+    For i = 2 To 7
+        stateText = Worksheets("StateTable").Range("A" & i).Value                           ' 状態テーブルのState値
+        readBackgroundColor = Worksheets("StateTable").Range("B" & i).Interior.color        ' 状態テーブルのRead列の背景色
+        Debug.Print ("stateText           :" & stateText)
+        Debug.Print ("readBackgroundColor :" & readBackgroundColor)
+        
+        ' 一致するか？
+        If previousText = stateText And previousBackgroundColor = readBackgroundColor Then
+            writeBackgroundColor = Worksheets("StateTable").Range("C" & i).Interior.color   ' 状態テーブルのWrite列の背景色
+            moveText = Worksheets("StateTable").Range("D" & i).Value                        ' 状態テーブルのMove列の値
+            transitionText = Worksheets("StateTable").Range("E" & i).Value                  ' 状態テーブルのTransition列の値
+            Debug.Print ("writeBackgroundColor:" & writeBackgroundColor)
+            Debug.Print ("moveText            :" & moveText)
+            Debug.Print ("transitionText      :" & transitionText)
+
+            ' `Tape` シートの A1 セルの下のセルの背景色を　Write列のいう色に塗る
+            Worksheets("Tape").Range(currentCell).Interior.color = writeBackgroundColor
+            
+            Dim horizontal As Long      ' 水平方向
+            If moveText = ">" Then      ' Move 列が `>` だったら その右のセルへ
+                horizontal = 1
+            ElseIf moveText = "<" Then  ' Move 列が `<` だったら その左のセルへ
+                horizontal = -1
+            End If
+            Debug.Print ("horizontal:" & horizontal)
+            
+            ' Transition 列のいうテキストを入れる
+            Dim startFileNumber As Integer
+            Dim nextFileAlphabet As String
+            startFileNumber = Columns(previousFileAlphabet).Column
+            nextFileAlphabet = Split(Cells(1, startFileNumber + horizontal).Address, "$")(1)
+            Debug.Print ("startFileNumber :" & startFileNumber)
+            Debug.Print ("nextFileAlphabet:" & nextFileAlphabet)
+            Worksheets("Tape").Range(nextFileAlphabet & currentRank).Value = transitionText
+
+            Exit For
+        End If
+    Next i
+End Sub
+```
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　けっこう　大がかりに　変えることになってしまったぜ」  
+
+📅2023-01-26 thu 21:12  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　こんなん　何がどう変わったのか　読者　分からんだろ」  
+
+![202301_excel_26-2114--3rdClock-1.png](https://crieit.now.sh/upload_images/fdfc0cf2fdc2fb0f0adac6ef4e59d0a863d26ebbbdd65.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　１クロック目と　２クロック目で違うところは、　スタート地点の列番号と、行番号だけだったということだぜ」    
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　このように　２つのサブルーチンの差異が　サブルーチンの外に押し出されたものを　**アーギュメント**（Argument；実引数）と呼ぶ」    
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　ふーん」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　３クロック目は　どう書くの？」  
+
+![202301_excel_26-2121--argument-1.png](https://crieit.now.sh/upload_images/0a6c4a73d2935ca90b25ac2e8473e95563d2709e4c167.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　`A1` とか `B2` というのは、１クロック前に居たセルだぜ。  
+だから　前の計算結果を　もらうといい。  
+書き直そう」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　VBA でファンクションは　どうやって書いたらいいんだぜ？」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　ググりゃいいんじゃないの？」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　🔍 `VBA ファンクション` で検索」  
+
+📖 [VBA　Functionプロシージャについて　～関数の解説と使用例～](https://www.bold.ne.jp/engineer-club/vba-function)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　よし　分かったぜ」  
+
+![202301_excel_26-2141--function.png](https://crieit.now.sh/upload_images/b537b697560f1fb0aeeaadc57a17f15b63d2751076122.png)  
+
+```vba
+Sub ボタン1_Click()
+
+    Dim resultCell As String
+    
+    ' 1回目の処理
+    resultCell = OnClock("A1")
+    
+    ' 同様の2回目の処理
+    resultCell = OnClock(resultCell)
+    
+End Sub
+
+Private Function OnClock(previousCell As String) As String
+    ' 毎クロック（ｎ回目のクロック）
+    Dim previousText As String
+    Dim previousBackgroundColor As Long
+    Dim currentRank As Long
+    Dim currentCell As String
+    Dim stateText As String
+    Dim readBackgroundColor As Long
+    Dim writeBackgroundColor As Long
+    Dim moveText As String
+    Dim transitionText As String
+    Dim i As Long
+    
+    previousFileAlphabet = Split(Cells(1, Range(previousCell).Column).Address, "$")(1)
+    previousRank = Range(previousCell).Row
+    currentRank = previousRank + 1
+    currentCell = previousFileAlphabet & currentRank
+    Debug.Print ("--------")
+    Debug.Print ("previousCell        :" & previousCell)
+    Debug.Print ("previousFileAlphabet:" & previousFileAlphabet)
+    Debug.Print ("previousRank        :" & previousRank)
+    Debug.Print ("currentRank         :" & currentRank)
+    Debug.Print ("currentCell         :" & currentCell)
+        
+    ' 開始行の背景色は、次行に引き継ぐ
+    If 2 <= previousRank Then
+        Dim aBackgroundColor As Long
+        Dim bBackgroundColor As Long
+        aBackgroundColor = Worksheets("Tape").Range("A" & previousRank).Interior.color
+        bBackgroundColor = Worksheets("Tape").Range("B" & previousRank).Interior.color
+        Worksheets("Tape").Range("A" & currentRank).Interior.color = aBackgroundColor
+        Worksheets("Tape").Range("B" & currentRank).Interior.color = bBackgroundColor
+        Debug.Print ("aBackgroundColor:" & aBackgroundColor)
+        Debug.Print ("bBackgroundColor:" & bBackgroundColor)
+    End If
+
+    previousText = Worksheets("Tape").Range(previousCell).Value                             ' 開始セルの値
+    previousBackgroundColor = Worksheets("Tape").Range(previousCell).Interior.color         ' 開始セルの背景色
+    Debug.Print ("previousText           :" & previousText)
+    Debug.Print ("previousBackgroundColor:" & previousBackgroundColor)
+
+    For i = 2 To 7
+        stateText = Worksheets("StateTable").Range("A" & i).Value                           ' 状態テーブルのState値
+        readBackgroundColor = Worksheets("StateTable").Range("B" & i).Interior.color        ' 状態テーブルのRead列の背景色
+        Debug.Print ("stateText           :" & stateText)
+        Debug.Print ("readBackgroundColor :" & readBackgroundColor)
+        
+        ' 一致するか？
+        If previousText = stateText And previousBackgroundColor = readBackgroundColor Then
+            writeBackgroundColor = Worksheets("StateTable").Range("C" & i).Interior.color   ' 状態テーブルのWrite列の背景色
+            moveText = Worksheets("StateTable").Range("D" & i).Value                        ' 状態テーブルのMove列の値
+            transitionText = Worksheets("StateTable").Range("E" & i).Value                  ' 状態テーブルのTransition列の値
+            Debug.Print ("writeBackgroundColor:" & writeBackgroundColor)
+            Debug.Print ("moveText            :" & moveText)
+            Debug.Print ("transitionText      :" & transitionText)
+
+            ' `Tape` シートの A1 セルの下のセルの背景色を　Write列のいう色に塗る
+            Worksheets("Tape").Range(currentCell).Interior.color = writeBackgroundColor
+            
+            Dim horizontal As Long      ' 水平方向
+            If moveText = ">" Then      ' Move 列が `>` だったら その右のセルへ
+                horizontal = 1
+            ElseIf moveText = "<" Then  ' Move 列が `<` だったら その左のセルへ
+                horizontal = -1
+            End If
+            Debug.Print ("horizontal:" & horizontal)
+            
+            ' Transition 列のいうテキストを入れる
+            Dim previousFileNumber As Integer
+            Dim nextFileAlphabet As String
+            Dim nextCell As String
+            previousFileNumber = Columns(previousFileAlphabet).Column
+            nextFileAlphabet = Split(Cells(1, previousFileNumber + horizontal).Address, "$")(1)
+            nextCell = nextFileAlphabet & currentRank
+            Debug.Print ("previousFileNumber :" & previousFileNumber)
+            Debug.Print ("nextFileAlphabet   :" & nextFileAlphabet)
+            Debug.Print ("nextCell           :" & nextCell)
+            Worksheets("Tape").Range(nextCell).Value = transitionText
+
+            ' 関数から抜ける
+            OnClock = nextCell
+            Exit Function
+            
+        End If
+    Next i
+End Function
+```
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　さらに　改造してしまったぜ」  
+
+📅2023-01-26 thu 21:43  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　こんなん　何がどう変わったのか　読者　分からんだろ」  
+
 # // 書きかけ

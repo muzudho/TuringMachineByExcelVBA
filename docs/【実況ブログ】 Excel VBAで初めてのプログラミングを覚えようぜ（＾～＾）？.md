@@ -1481,9 +1481,62 @@ End Function
 「　これは何に使うんだぜ？」  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　小さなメモリを使って、もう少し色々動き回る　**自動人形**（オートマタ；automata）を作ったり、  
-もっと大きなものを作るのに使われるぜ  」
+「　👆　この例だと　長さ６のオレンジ色のテープを作るために使ったんだぜ。  
+説明しよう」  
 
+![202301_excel_27-0028--stateTable.png](https://crieit.now.sh/upload_images/93785cda8bce3af90e6039ecb8d2546763d29c38ecc54.png)  
 
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　この `StateTable` というのが　プログラムの命令セットのようなものだぜ。  
+この６行があると……」  
 
-# // 書きかけ
+![202301_excel_27-0134--A.png](https://crieit.now.sh/upload_images/5c1ac565c7d438d3dd496293174b018163d2abc2d36ba.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　最初は `A` と書かれているが、  
+`A` にあんまり意味は無くて　長さ１つの白いテープがそこにあると思えだぜ」  
+
+![202301_excel_27-0030--tape.png](https://crieit.now.sh/upload_images/c3bb725a731a2ac9e1f66ccf4f5d211863d29ca67afc6.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　上の図は　テープを伸ばしている過程が描かれたもので、  
+最後の　１３行目が　作られたテープだぜ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　長さ６つのオレンジ色のテープ　が作られて　動作が止まったわけだぜ」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　長さ６つのオレンジ色のテープ　なんか　作っても　嬉しくないしなあ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　今回はサンプルで　オレンジ色１色しかなかったが、  
+それが　２６色あって　アルファベットの２６文字に対応するとか、  
+最初から色の塗られたテープがあって　チューリング・マシンが動いた後には　別の色のテープが残っているとか、  
+それが　暗号を解読した答え　だったりしたら　嬉しいだろ」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　じゃあ　**今回の例題**　がシンプルすぎて　チューリング・マシン　が何たるか　嬉しさが　分からないんだ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　**プログラミング言語**　が誕生する前の　プログラミング　方法だぜ」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　私たちが使うのは　プログラミング言語　なのだから、懐古好きでもなければ　チューリング・マシン　を覚えなくてもいいのでは？」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　一生のうちに　何回か　**チューリング・マシン**　とか　**チューリング完全**　の名前を聞くことはあるだろ。  
+記事を読んで知識として知ってるより　作って知ってる方が　話しに実感がこもるだろ」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　実感　要らないから　実用的で　効率的な練習　無いのかなあ」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　そんな実用的な Webサイト なら、他人が作るしな　」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　プログラムも　コンピューターも無い時代に　ヒトが考えたプログラムを　**体験**　するぐらいね」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　もっと面白い例題でやってほしい」  
+
+＜おわり＞

@@ -146,7 +146,7 @@ A
 📖 [セルに値を入れる：Excel VBA プログラミング入門](http://www.eurus.dti.ne.jp/~yoneyama/Excel/vba/prog/prog_atai.html)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かった」  
+「　よし　分かったぜ」  
 
 ![202301_excel_25-2046--HelloWorld-1.png](https://crieit.now.sh/upload_images/8bedf851dc72c6806bd384e10b70508e63d116df021a7.png)  
 
@@ -176,7 +176,7 @@ Worksheets("GUI").Range("A1").Value = "Hello, world!!"
 📖 [セルに色を設定する](https://www.tipsfound.com/vba/07006)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かった」  
+「　よし　分かったぜ」  
 
 ![202301_excel_25-2056--BackgroundColor-1.png](https://crieit.now.sh/upload_images/ab3f6398046ba32df211de0534339eb163d1190f3e6d6.png)  
 
@@ -213,7 +213,7 @@ Worksheets("GUI").Range("A1").Interior.ColorIndex = 45 ' オレンジ
 📖 [VBA セルの色を取得する (Interior.Color, ColorIndex)](https://www.tipsfound.com/vba/07005)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かった」  
+「　よし　分かったぜ」  
 
 ![202301_excel_25-2117--CopyColor-1.png](https://crieit.now.sh/upload_images/54dd3efed1a31e73d04c267e53e17dac63d11e1182115.png)  
 
@@ -260,7 +260,7 @@ Worksheets("GUI").Range("A1").Interior.ColorIndex = 45 ' オレンジ
 📖 [イミディエイトウィンドウの使い方](https://www.kenschool.jp/blog/?p=3430)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かった」  
+「　よし　分かったぜ」  
 
 ![202301_excel_25-2125--Immediate-1.png](https://crieit.now.sh/upload_images/e6b3acf6e5aca1fc55867d968f4f342d63d120141a3d7.png)  
 
@@ -390,7 +390,7 @@ End Sub
 📖 [[Excel で VBA] For 文による繰り返し](https://brain.cc.kogakuin.ac.jp/~kanamaru/lecture/vba2013/04-for01.html)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かった」  
+「　よし　分かったぜ」  
 
 ![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
 「　`For文` が何かの説明は　しないのね」  
@@ -413,7 +413,7 @@ VBA の if 文ってどうやって書くんだったかな？」
 📖 [ExcelのVBA（マクロ）でIf～Then～Elseを使って条件分岐する方法](https://office-hack.com/excel/if-vba/)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かった」  
+「　よし　分かったぜ」  
 
 ![202301_excel_25-2249--if-then-else-1.png](https://crieit.now.sh/upload_images/55c377d1e72e453ee5954f4471aa3a9a63d133aea4cb7.png)  
 
@@ -433,7 +433,7 @@ Forループを途中で抜けるの　VBAで　どうやって書くんだっ�
 📖　[Excel VBAでFor文を途中で抜ける：Exit](https://uxmilk.jp/48591)  
 
 ![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
-「　よし　分かった」  
+「　よし　分かったぜ」  
 
 ```vba
 Sub ボタン1_Click()
@@ -651,5 +651,145 @@ End Sub
 「　今日は　ここまでとするが、　３クロック目　行くからな」  
 
 📅 2023-01-25 wed 23:51 end  
+
+# 📅2023-01-26 thu 18:53 start
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　VBA でサブルーチンは　どうやって書いたらいいんだぜ？」  
+
+![ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/96fb09724c3ce40ee0861a0fd1da563d61daf8a09d9bc.png)  
+「　ググりゃいいんじゃないの？」  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　🔍 `VBA サブルーチン` で検索」  
+
+📖 [Excel VBA 処理の一部をサブルーチン化するCallステートメント](https://kosapi.com/post-5008/)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　よし　分かったぜ」  
+
+![202301_excel_26-1901--Subroutine-1.png](https://crieit.now.sh/upload_images/bd596f09e3b962c6b9f6b5e2603dca2263d24fb97805b.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　スケルトン（Skeleton；穴埋めの穴じゃない方）を書こうぜ」  
+
+![202301_excel_26-1906--MoveCode-1.png](https://crieit.now.sh/upload_images/aeed27da28a1e2e6fb9834509983fad163d2514d6e3aa.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　スケルトンの中へ　コードを　こうやって　入れたらいいんじゃないかだぜ？」  
+
+![202301_excel_26-1911--MovedCode.png](https://crieit.now.sh/upload_images/9b465017915b949d3a4152c38134c39863d251d1a8f17.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　つまり　こう」  
+
+![202301_excel_26-1912--Call-1.png](https://crieit.now.sh/upload_images/7f3a7089c2ea734bbb3f14dbe451e7d163d2523bbff86.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　移動した跡の所には　コール文（Call Statement）を置いておこうぜ？」  
+
+```vba
+Sub ボタン1_Click()
+    
+    ' 1回目の処理
+    Call On1stClock
+    
+    ' 同様の2回目の処理
+    Call On2ndClock
+    
+End Sub
+
+Private Sub On1stClock()
+    ' １回目のクロック
+    Dim text As String
+    Dim backgroundColor As Long
+    Dim i As Long
+    Dim stateText As String
+    Dim readBackgroundColor As Long
+    Dim writeBackgroundColor As Long
+    Dim moveText As String
+    Dim transitionText As String
+    
+    text = Worksheets("Tape").Range("A1").Value ' セルの値
+    backgroundColor = Worksheets("Tape").Range("A1").Interior.color ' 背景色
+    
+    For i = 2 To 7
+        stateText = Worksheets("StateTable").Range("A" & i).Value ' セルの値
+        readBackgroundColor = Worksheets("StateTable").Range("B" & i).Interior.color ' 背景色
+        
+        ' 一致するか？
+        If text = stateText And backgroundColor = readBackgroundColor Then
+            writeBackgroundColor = Worksheets("StateTable").Range("C" & i).Interior.color ' 背景色
+            moveText = Worksheets("StateTable").Range("D" & i).Value ' セルの値
+            transitionText = Worksheets("StateTable").Range("E" & i).Value ' セルの値
+            
+            ' `Tape` シートの A1 セルの下のセルの背景色を　Write列のいう色に塗る
+            Worksheets("Tape").Range("A2").Interior.color = writeBackgroundColor
+            
+            ' Move 列が `>` だったら その右のセルへ、 Transition 列のいうテキストを入れる
+            If moveText = ">" Then
+                Worksheets("Tape").Range("B2").Value = transitionText
+            End If
+
+            Exit For
+        End If
+    Next i
+
+End Sub
+
+Private Sub On2ndClock()
+    ' ２回目のクロック
+    Dim text As String
+    Dim backgroundColor As Long
+    Dim i As Long
+    Dim stateText As String
+    Dim readBackgroundColor As Long
+    Dim writeBackgroundColor As Long
+    Dim moveText As String
+    Dim transitionText As String
+
+    text = Worksheets("Tape").Range("B2").Value ' セルの値
+    backgroundColor = Worksheets("Tape").Range("B2").Interior.color ' 背景色
+
+    ' ★ 上の行の背景色は引き継ぐ
+    Worksheets("Tape").Range("A3").Interior.color = Worksheets("Tape").Range("A2").Interior.color
+    Worksheets("Tape").Range("B3").Interior.color = Worksheets("Tape").Range("B3").Interior.color
+
+    For i = 2 To 7
+        stateText = Worksheets("StateTable").Range("A" & i).Value ' セルの値
+        readBackgroundColor = Worksheets("StateTable").Range("B" & i).Interior.color ' 背景色
+        
+        ' 一致するか？
+        If text = stateText And backgroundColor = readBackgroundColor Then
+            writeBackgroundColor = Worksheets("StateTable").Range("C" & i).Interior.color ' 背景色
+            moveText = Worksheets("StateTable").Range("D" & i).Value ' セルの値
+            transitionText = Worksheets("StateTable").Range("E" & i).Value ' セルの値
+
+            ' `Tape` シートの A1 セルの下のセルの背景色を　Write列のいう色に塗る
+            Worksheets("Tape").Range("B3").Interior.color = writeBackgroundColor
+            
+            ' ★ Move 列が `<` だったら その左のセルへ、 Transition 列のいうテキストを入れる
+            If moveText = "<" Then
+                Worksheets("Tape").Range("A3").Value = transitionText
+            End If
+
+            Exit For
+        End If
+    Next i
+End Sub
+```
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　じゃあ　`GUI` シートのボタンを押そうぜ？」  
+
+![202301_excel_26-1915--Check.png](https://crieit.now.sh/upload_images/60d46eddc740de260994cbc83f82edc463d252c114f71.png)  
+
+![ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/d27ea8dcfad541918d9094b9aed83e7d61daf8532bbbe.png)  
+「　👆　ちゃんと動いてるな」  
+
+![kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/beaf94b260ae2602ca8cf7f5bbc769c261daf8686dbda.png)  
+「　場所を移しただけだしな」  
+
+📅2023-01-26 thu 19:16  
 
 # // 書きかけ
